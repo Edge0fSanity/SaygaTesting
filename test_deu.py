@@ -4,10 +4,10 @@ import psutil
 
 models = ['llama3.1:8b']
 
-with open("text.txt", "r", encoding="UTF-8") as f:
+with open("text_deu.txt", "r", encoding="UTF-8") as f:
   text = list(map(str.strip, f.readlines()))
 
-out = open("answers/answers.txt", "w", encoding="UTF-8")
+out = open("answers/answers_deu.txt", "w", encoding="UTF-8")
 
 print(*text)
 
